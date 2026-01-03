@@ -1,0 +1,70 @@
+.card{
+        width:200px;
+        border:none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.336);
+        display:inline-block;
+        margin-left:15px;
+        margin-top:20px;
+        
+        
+      }
+
+      .pfp{
+        width:200px;
+        height:200px;
+        object-fit:cover;
+        vertical-align: middle;
+      }
+
+      p{
+        font-family:Helvetica;
+        font-size:18px;
+        margin-bottom: 10px;
+        margin-top:10px;
+      }
+
+      .username{
+        padding-left:10px;
+        font-weight: bold;
+      }
+
+      .mutual{
+        color: gray;
+        display: inline-block;
+        vertical-align: top;
+
+      }
+
+      .add{
+        margin-left: 10px;
+        margin-bottom:15px;
+        margin-top:10px;
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border:none;
+        font-size:18px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:6px;
+
+
+
+      }
+
+      .mutualpfp{
+        display:inline-block;
+        width:40px;
+        vertical-align: top;
+        margin-left:10px;
+      }
+
+      .mutualpfp1{
+        width:100%;
+        border-radius:50%;
+      }
+
+      .mutual-info{
+        border-bottom:20px;
+      }

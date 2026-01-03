@@ -1,0 +1,53 @@
+.box{
+        background-color:red;
+        width:20px;
+        height:20px;
+      }
+
+      .circle{
+        background-color: green;
+        border-radius:10px;
+        width:20px;
+        height:20px;
+
+      }
+
+      .satisfied{
+        width:300px;
+        border:1px;
+        border-style: solid;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+      }
+
+
+      p{
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .youtube{
+        background-color: rgb(33, 33, 33);
+        width:360px;
+        padding-left:15px;
+        padding-top:20px;
+        padding-right:15px;
+        font-family: Arial;
+        padding-bottom:20px;
+      }
+
+      .title{
+        font-size:24px;
+        color: white;
+        font-weight:bold;
+        margin-bottom: 10px;
+
+
+      }
+
+      .subtitle{
+        
+        color: rgb(160, 160, 160);
+      }

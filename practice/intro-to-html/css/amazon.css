@@ -1,0 +1,63 @@
+p{
+  font-family:arial;
+}
+
+.link:hover{
+color:rgb(248, 194, 46);
+}
+
+.shoes{
+  font-weight:bold;
+  font-size:24px;
+  font-family:Arial;
+}
+.stock{
+  color:rgb(0, 118, 0);
+  font-weight:bold;
+  font-size:20px;
+  font-family:arial;
+}
+
+.cart{
+  background-color:rgb(255, 216, 20);
+  height:40px;
+  width: 120px;
+  border:none;
+  border-radius:20px;
+  font-size:15px;
+  font-weight:540;
+  cursor:pointer;
+  transition: background-color 0.2s,
+  opacity 0.2s;
+  font-weight:bold;
+}
+
+.cart:hover{
+  background-color:rgb(219, 185, 13);
+  
+}
+.cart:active{
+  opacity:0.7;
+}
+
+.buy{
+  background-color:rgb(255, 164, 28);
+  height:40px;
+  width: 120px;
+  border:none;
+  border-radius:20px;
+  font-size:15px;
+  font-weight:540;
+  cursor:pointer;
+  margin-left:20px;
+  transition: background-color 0.2s,
+  opacity 0.2s;
+}
+
+.buy:hover{
+background-color:rgb(225, 142, 17);
+
+}
+.buy:active{
+  opacity:0.7;
+}

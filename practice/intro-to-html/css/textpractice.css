@@ -1,0 +1,90 @@
+.tahoma{
+  font-family:tahoma;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.deals{
+  font-family:arial;
+  font-size:23px;
+  font-weight:bold;
+  margin-top:60px;
+  margin-bottom:0;
+}
+.sales{
+color:red;
+font-family:arial;
+font-style:italic;
+margin-top: 2px;
+}
+
+.heading{
+  font-family:Verdana;
+  font-size:20px;
+  font-weight:bold;
+  margin-top:60px;
+  margin-bottom:0;
+
+}
+
+.class{
+  color:rgb(160, 156, 156);
+  font-family:verdana;
+  font-size:15px;
+  margin-top:5px;
+  margin-bottom:20px;
+
+
+}
+
+.description{
+  font-size: 15px;
+  font-family:verdana;
+  width:270px;
+}
+
+.getstarted{
+  background-color:green;
+  color:white;
+  border:none;
+  border-radius:7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top:7px;
+  padding-bottom: 7px;
+  font-weight: bold;
+  transition: box-shadow 0.2s,
+  margin-top 0.15s,
+  margin-bottom 0.15s;
+  margin-top:2px;
+}
+
+.getstarted:hover{
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.45);
+margin-top:0;
+margin-bottom:2px;
+}
+
+.shopping{
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bolder;
+  text-align: center;
+  margin-top:80px;
+}
+
+.apple{
+  text-align:center;
+  font-family:Arial;
+  font-size:14px;
+}
+
+.learn{
+  text-align:center;
+  font-family:arial;
+  color:rgb(0, 0, 255);
+  font-size:14px;
+}
+.learn:hover{
+  cursor:pointer;
+}

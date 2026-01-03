@@ -1,0 +1,91 @@
+.firstname,
+      .lastname{
+        display:inline-block;
+        border-width: 1px;
+        border-style:solid;
+        border-radius:5px;
+        width:100px;
+        margin-top:5px;
+        margin-bottom:5px;
+        padding-top:7px;
+        padding-bottom:7px;
+        padding-left:10px;
+        padding-right:10px;
+        border-color: rgb(183, 179, 179);
+
+
+      }
+
+      .email{
+        display:block;
+        border-width: 1px;
+        border-style:solid;
+        border-radius:5px;
+        width:225px;
+        margin-top:5px;
+        margin-bottom:5px;
+        padding-top:7px;
+        padding-bottom:7px;
+        padding-left:10px;
+        padding-right:10px;
+        border-color: rgb(183, 179, 179);
+
+      }
+
+      .signup{
+        width:245px;
+        color:white;
+        background-color: rgb(5, 100, 234);
+        border:none;
+        border-radius:6px;
+        font-size:15px;
+        font-weight:bolder;
+        padding-top:7px;
+        padding-bottom:7px;
+        
+
+
+
+      }
+
+      .ubertext{
+        font-family:Arial;
+        font-size:26px;
+
+      }
+
+      .pickup,
+      .destination{
+        display:block;
+        width:250px;
+        font-size:13px;
+        margin-bottom:7px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 10px;
+        background-color: rgba(177, 173, 173, 0.297);
+        border:none;
+
+      }
+
+      .request{
+        color:white;
+        background-color:black;
+        border:none;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:10px;
+        padding-right:10px;
+
+      }
+
+      .schedule{
+        background-color:rgba(165, 163, 163, 0.272);
+        border:none;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:10px;
+        padding-right:10px;
+        margin-left:10px;
+
+      }

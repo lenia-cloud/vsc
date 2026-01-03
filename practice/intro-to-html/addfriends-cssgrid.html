@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Followers</title>
+
+    <style>
+
+      p{
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .grid{
+        display:grid;
+        grid-template-columns:150px 150px 150px;
+        column-gap: 20px;
+        row-gap: 60px;
+      }
+
+      .card{
+        box-shadow: 1px 1px 5px rgba(89, 87, 87, 0.733);
+        border-radius:5px;
+        background-color: aliceblue;
+        vertical-align: top;
+        transition: transform 0.15s ease-in-out;
+      }
+
+      .card:hover{
+        transform: rotate(-1deg);
+      }
+
+      .cardinfo{
+        margin-left:10px;
+        margin-right:10px;
+      }
+
+      .userpfp{
+        width:100%;
+        height:150px;
+        margin-bottom:5px;
+        object-fit: cover;
+        border-top-left-radius:5px;
+        border-top-right-radius: 5px;
+        
+
+      }
+
+      .username{
+        font-weight:bold;
+        font-size:16px; 
+        color: rgb(7, 7, 96);
+      
+      }
+
+      .username,
+      .mutual,
+      .add{
+        margin-bottom: 10px;
+      }
+
+      .mutual{
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        align-items: center;
+
+      }
+
+      .mutualpfp{
+        width: 20px;
+        height:20px;
+        border-radius:10px;
+        margin-right:5px;
+        vertical-align: middle;
+        object-fit: cover;
+
+      }
+
+      .mutualnumber{
+        font-size: 12px;
+        color: rgba(15, 16, 129, 0.4);
+        margin-left: 5px;
+        vertical-align: middle;
+        
+
+      }
+
+      .add{
+        border:none;
+        background-color: rgb(24, 119, 242);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        color: white;
+        border-radius:5px;
+        transition: box-shadow 0.1s,
+        margin-left 0.05s, margin-right 0.05s;
+    
+      }
+
+      .add:hover{
+        box-shadow: 1px 3px 5px rgba(81, 84, 86, 0.568);
+      }
+
+      .add:active{
+        margin-left:1px;
+        margin-right: 1px;
+        box-shadow: 0 0 0 oldlace;
+      }
+
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="grid">
+      <div class="card">
+      <img class="userpfp" src="thumbnails/4566a198-849f-4fd2-bd43-cf52ae83ac0c.jpeg">
+      <div class="cardinfo">
+        
+        <p class="username">Aaron</p>
+
+        <div class="mutual">
+          <img class="mutualpfp" src="thumbnails/60c8d9774db622734bf3bbb85fba9091.jpg">
+          <p class="mutualnumber">2 mutual friends</p>
+        </div>
+
+        <button class="add">Add Neighbour</button>
+
+      </div>
+      
+    </div>
+
+    <div class="card">
+      <img class="userpfp" src="thumbnails/ce26b54c-337b-4f7e-9b38-31a6e32cd330.jpeg">
+      <div class="cardinfo">
+        
+        <p class="username">Tamar</p>
+
+        <div class="mutual">
+          <img class="mutualpfp" src="thumbnails/3f537bc818b06c54342d9f347ea162a4.jpg">
+          <p class="mutualnumber">2 mutual friends</p>
+        </div>
+
+        <button class="add">Add Neighbour</button>
+
+      </div>
+      
+    </div>
+
+    <div class="card">
+      <img class="userpfp" src="thumbnails/742d4cfcf8b7509de1987cbc0f88fcac.jpg">
+      <div class="cardinfo">
+        
+        <p class="username">Jairus</p>
+
+        <div class="mutual">
+          <img class="mutualpfp" src="thumbnails/8c5a976419f1718c44cf3be1006fcdc9.jpg">
+          <p class="mutualnumber">1 mutual friend</p>
+        </div>
+
+        <button class="add">Add Neighbour</button>
+
+      </div>
+      
+    </div>
+
+     <div class="card">
+      <img class="userpfp" src="thumbnails/545b142331168c71e8686ab16e3c24a8.jpg">
+      <div class="cardinfo">
+        
+        <p class="username">Cornelius</p>
+
+        <div class="mutual">
+          <img class="mutualpfp" src="thumbnails/4566a198-849f-4fd2-bd43-cf52ae83ac0c.jpeg">
+          <p class="mutualnumber">1 mutual friend</p>
+        </div>
+
+        <button class="add">Add Neighbour</button>
+
+      </div>
+      
+    </div>
+
+    <div class="card">
+      <img class="userpfp" src="thumbnails/3f537bc818b06c54342d9f347ea162a4.jpg">
+      <div class="cardinfo">
+        
+        <p class="username">Cornelius</p>
+
+        <div class="mutual">
+          <img class="mutualpfp" src="thumbnails/1c3305784226319b4b01ba2ff6ff9f06.jpg">
+          <p class="mutualnumber">1 mutual friend</p>
+        </div>
+
+        <button class="add">Add Neighbour</button>
+
+      </div>
+      
+    </div>
+
+
+
+
+
+    </div>
+
+    
+    
+
+  </body>
+
+</html>

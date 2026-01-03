@@ -1,0 +1,76 @@
+.button{
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+.link{
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.stretch{
+background-color:rgb(16, 141, 12);
+border:none;
+margin-top:10px;
+color:white;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+transition:padding-right 0.4s,
+padding-left 0.4s,
+padding-top 0.4s,
+padding-bottom 0.4s;
+}
+.stretch:hover{
+padding-left:30px;
+padding-right:30px;
+padding-top:18px;
+padding-bottom:18px;
+}
+
+.shadow{
+  background-color:rgb(16, 141, 12);
+border:none;
+margin-top:10px;
+color:white;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+cursor:pointer;
+transition: margin-left 0.1s,
+  margin-top 0.1s,
+  box-shadow 0.2s;
+
+}
+.shadow:hover{
+  
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.587);
+}
+
+.shadow:active{
+  margin-left:5px;
+  margin-top:8px;
+  box-shadow: none;
+}
+
+.num{
+  background-color:rgb(16, 141, 12);
+border:none;
+margin-top:10px;
+color:white;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+transition: padding-left 0.3s,
+padding-right 0.3s;
+}
+
+.num:hover{
+padding-left:20px;
+padding-right:20px;
+}
