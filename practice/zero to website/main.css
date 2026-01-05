@@ -1,0 +1,39 @@
+body{
+  background-color: gray;
+  color:white;
+}
+
+p{
+  
+}
+
+.container{
+  background-color: orange;
+}
+
+#about{
+  background-color: blanchedalmond;
+}
+
+p, h2, #about, .container{
+  font-weight: bold;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#about img{
+  width:100px;
+  padding: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: red;
+  margin: 10px;
+}
+
+.business{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
