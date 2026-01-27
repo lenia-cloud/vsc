@@ -1,9 +1,98 @@
 <html>
   <head>
+    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+      nav a{
+        background-color: antiquewhite;
+        ...animation: link-animation 4s ;
+      }
+
+      nav a:visited{
+        
+        color: brown;
+      }
+
+      nav a:link{
+        color: orangered;
+      }
+
+      @keyframes link-animation{
+        0%{
+          background-color: red;
+          color: aqua;
+        }
+        25%{
+          background-color: yellow;
+          color: blue;
+        }
+        50%{
+          background-color: greenyellow;
+          color: orange;
+        }
+        100%{
+          background-color: orange;
+          color: white;
+        }
+        
+      }
+
+      h1{
+        position: absolute;
+        
+       
+      }
+
+      header{
+        height:200px;
+        background-image: url(thumbnails/evan_almighty.jpg), url(thumbnails/waterwalk.jpg);
+        background-repeat: no-repeat;
+        background-position: left, right ;
+        
+        background-size: contain;
+        margin: calc(2 * 10px);
+        border:50px black solid;
+        border-image: url(thumbnails/amen.jpeg) 25;
+      }
+
+      @keyframes title-bounce{
+        0%{
+          top: 0%;
+        }
+        
+        100%{
+          bottom: 0%;
+        }
+      }
+
+      img{
+        max-width: 100%;
+      }
+
+      @media screen and (max-width:600px) {
+        body{
+          background-color: chocolate;
+        }
+        
+      }
+
+      @media screen and (max-width: 812px) and (min-width: 600px) {
+        body{
+          background-color: lightcoral;
+        }
+        
+      }
+   
+  
+
+    </style>
 
   </head>
   <body>
-    <h1>Attributes</h1>
+    <header><h1 title="this is the title of today's website">Attributes</h1></header>
+    
     <p>Attributes are properties that define how a particular html element behaves</p>
     <h2>Examples of attributes</h2>
     <ol>
@@ -11,6 +100,16 @@
       <li>alt</li>
     </ol>
     <br>
-    <img src="thumbnails/amen.jpeg " alt="this is a picture with the word amen">
-  </body>
+    <img src="thumbnails/amen.jpeg " alt="this is a picture with the word amen" width="200px" height="200px"><br>
+    <nav>
+      <a href="../intro-to-html/addfriend.html">Click here to see your friends</a>
+      <a href="index2.html">11A classroom</a>
+      <a href="lenia-practice.html">11A classroom</a>
+
+
+    </nav>
+
+
+    <img src="thumbnails/flowerfield.jpeg" alt="flower">
+      </body>
 </html>
