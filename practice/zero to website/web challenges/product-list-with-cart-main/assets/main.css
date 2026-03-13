@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+body{
+ background-color: hsl(13, 31%, 94%);
+ font-family: "Red Hat Text", sans-serif ;
+
+}
+h1{
+  color: hsl(14, 65%, 9%);
+  font-size: larger;
+}
+main{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 10px;
+  
+}
+
+.products{
+  margin: 10px;
+  flex:70%;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+img{
+  max-width: 100%;
+}
+
+.product{
+  margin: 10px;
+  flex: 25%;
+  text-align: center;
+
+}
+
+.product img{
+  border-radius: 5px;
+}
+.product button{
+  background-color: hsl(20, 50%, 98%);
+  border: 1px solid hsl(12, 20%, 44%);
+  border-radius: 20px;
+  padding: 5px 20px;
+  position: relative;
+  top: -20px;
+  vertical-align: middle;
+  
+
+}
+
+.product button img{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.product button span{
+  color: hsl(14, 65%, 9%);
+}
+.product h6, p{
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.product h6{
+  color:hsl(12, 20%, 44%) ;
+  font-weight: lighter;
+}
+
+.type{
+  color: hsl(14, 65%, 9%);
+  font-size: medium;
+  font-weight: 600;
+}
+.price{
+ color: hsl(14, 86%, 42%);
+ font-weight: 600;
+ font-size: 15px;
+
+}
+
+.cart{
+  background-color: hsl(20, 50%, 98%);
+  padding: 10px;
+  text-align: center;
+  flex: 20%;
+  height: fit-content;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.cart h3{
+  margin: 0;
+  text-align: left;
+  color: hsl(14, 86%, 42%);
+  
+}
+
+.cart p{
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .product{
+    flex:100%;
+  }
+  
+}

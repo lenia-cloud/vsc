@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing with Cart</title>
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+  <main>
+    <div class="products">
+      <h1>Desserts</h1>
+      <div class="container" id="prods">
+
+        <div class="product">
+          <img src="assets/images/image-waffle-desktop.jpg" alt="waffles with berries">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Waffle</h6>
+            <p class="type">Waffle with berries</p>
+            <p class="price">$6.50</p>
+          </div> 
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-waffle-desktop.jpg" alt="creme brulee">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Crème Brûlée</h6>
+            <p class="type">Vanilla Bean Crème Brûlée</p>
+            <p class="price">$7.00</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-macaron-desktop.jpg" alt="Macarons">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Macaron</h6>
+            <p class="type">Macaron Mix of Five</p>
+            <p class="price">$8.00</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-tiramisu-desktop.jpg" alt="tiramisu">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Tiramisu</h6>
+            <p class="type">Classic Tiramisu</p>
+            <p class="price">$5.50</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-baklava-desktop.jpg" alt="Baklava">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Baklava</h6>
+            <p class="type">Pistachio Baklava</p>
+            <p class="price">$4.00</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-meringue-desktop.jpg" alt="Pie">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Pie</h6>
+            <p class="type">Lemon Meringue Pie</p>
+            <p class="price">$5.00</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Cake</h6>
+            <p class="type">Red Velvet Cake</p>
+            <p class="price">$4.50</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Brownie</h6>
+            <p class="type">Salted Caramel Brownie</p>
+            <p class="price">$5.50</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="assets/images/image-panna-cotta-desktop.jpg" alt=" Vanilla Panna Cotta">
+          <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+          <div class="text">
+            <h6>Panna Cotta</h6>
+            <p class="type">Vanilla Panna Cotta</p>
+            <p class="price">$6.50</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="cart">
+      <h3>Your Cart (0)</h3>
+      <img src="assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your added items will appear here</p>
+    </div>
+
+  </main>
+  <script>
+    async function loadData(){
+      const fetch_data = await fetch("./data.json")
+      const data = await fetch_data.json()
+      return data
+     
+      
+    }
+    const data= loadData()
+    const container = document.getElementById("prods")
+    for(i of data){
+      container.innerHTML = container.innerHTML + `
+      <div class="product">   
+        <img src="${i.image.desktop}" alt="${i.name}">
+        <button class="cart-button"><img src="assets/images/icon-add-to-cart.svg" alt=""><span>Add to Cart</span></button>
+        <div class="text">
+          <h6>${i.name}</h6>
+          <p class="type">${i.type}</p>
+          <p class="price">$${i.price}</p>
+        </div>
+      </div>`
+    }
+    
+  </script>
+
+</body>
+</html>
+
