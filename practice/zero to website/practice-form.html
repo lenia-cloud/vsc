@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Information Form</title>
+</head>
+<body>
+  <form action="attributes.html">
+    <div>  
+      <label for="name">Enter your name</label>
+      <input type="text" name="name" placeholder="e.g. Lenia" required> <br>
+    </div>
+
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" name="age" placeholder="e.g.20" required>
+    </div>
+
+    <ul>
+      <li>dates</li>
+      <li>files</li>
+      <li>emails</li>
+      <li>colors</li>
+      <li>telephone numbers</li>
+      <li>radio</li>
+
+      <li>select input</li>
+      <li>textarea</li>
+      <li>range</li>
+    </ul>
+
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" required>
+    </div>
+
+    <div>
+      <label for="pfp">Profile picture</label>
+      <input type="file" required>
+    </div>
+
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" placeholder="name@email.com" name="email" required>
+    </div>
+
+    <div>
+      <label for="savings">Enter your range of savings:</label>
+      <input type="range" name="savings" min="1" max="90" list="show">
+      <datalist id="show">
+        <option value="1"></option>
+        <option value="10"></option>
+        <option value="45"></option>
+        <option value="90"></option>
+      </datalist>
+    </div>
+
+    <div>
+      <label for="color">Favorite color</label>
+      <input type="color" name="color">
+    </div>
+
+    <div>
+      <label for="class">Enter your class:</label>
+      <select name="class" id="class">
+        <option value="G6">G6</option>
+        <option value="G7">G7</option>
+        <option value="G8">G8</option>
+        <option value="G9">G9</option>
+        <option value="G10">G10</option>
+        <option value="G11">G11</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="maritalstatus">Are you married?</label>
+      <input type="checkbox" name="marital" value="yes">
+    </div>
+
+    <div>
+      <label for="gender">Male</label>
+      <input type="radio" name="gender" value="male">
+      <label for="gender">Female</label>
+      <input type="radio" name="gender" value="female">
+    </div>
+
+    <div>
+      <label for="description">Describe yourself in a few words</label>
+      <textarea name="description" id="desc"></textarea>
+      
+    </div>
+
+    <button type="submit">Submit profile</button>
+  </form>
+
+
+  
+</body>
+</html>
