@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Flip Game</title>
+</head>
+<body>
+
+
+  <button onclick="
+    const guess='heads';
+    let computerGuess= Math.random();
+   
+
+    computerGuess<0.5 ? result='heads' : result='tails';
+    guess==result ? console.log('You win') : console.log('You lose');
+    
+  
+    ">
+    Heads
+  </button>
+  
+  <button onclick="
+    const guess='tails';
+    let computerGuess= Math.random();
+
+    if (computerGuess<0.5){
+      result='heads';
+    }else if (computerGuess>=0.5){
+      result='tails';
+    }
+    
+    if (guess===result){
+      console.log('You win');
+    }else{
+      console.log('You lose');
+    }
+    ">
+    Tails
+  </button>
+
+  <script>
+    
+  </script>
+</body>
+</html>

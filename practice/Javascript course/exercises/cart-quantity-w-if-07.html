@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity
+  </title>
+
+  <style>
+
+    p{
+      margin-left:5px;
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .show-quantity{
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: rgb(160, 13, 13);
+      color: white;
+      padding: 7px 15px;
+      border-radius: 17px;
+      margin: 3px;
+    }
+
+    .add{
+      display: inline-block;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      background-color:rgb(89, 5, 5);
+      color: rgb(237, 200, 188);
+      padding: 7px 15px;
+      border-radius: 17px;
+      margin: 5px 2px;
+    }
+
+    .remove{
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: rgb(237, 200, 188);
+      color:rgb(89, 5, 5);
+      padding: 7px 15px;
+      border-radius: 17px;
+      margin: 5px 2px;
+    }
+
+    .reset{
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: rgb(160, 13, 13);
+      color: white;
+      padding: 7px 15px;
+      border-radius: 17px;
+      margin: 5px 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Cart Quantity</p>
+
+<div>
+  <button class="add"
+  onclick="
+    cartQuantity++;
+    if (cartQuantity<=10){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('The cart is full.')
+      cartQuantity--;
+    }
+
+  ">Add to Cart</button>
+
+  <button class="add"
+  onclick="
+    cartQuantity+=2;
+    if (cartQuantity<=10){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('The cart is full.')
+      cartQuantity-=2;
+    }
+    
+    
+  ">+2</button>
+
+  <button class="add"
+   onclick="
+    cartQuantity+=3;
+    if (cartQuantity<=10){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('The cart is full.')
+      cartQuantity-=3;
+    }
+  ">+3</button>
+
+  <button class="add"
+  onclick="
+    cartQuantity+=4;
+    if (cartQuantity<=10){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('The cart is full.')
+      cartQuantity-=4;
+    }
+  ">+4</button>
+
+  <button class="add"
+  onclick="
+    cartQuantity+=5;
+    if (cartQuantity<=10){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('The cart is full.')
+      cartQuantity-=5;
+    }
+  ">+5</button>
+
+  </div>
+
+  <button class="remove"
+  onclick="
+    cartQuantity--;
+    if (cartQuantity>=0){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('Not enough items in cart.')
+      cartQuantity++;
+    }
+  ">Remove from Cart</button>
+
+  <button class="remove"
+   onclick="
+    
+    if (cartQuantity-2<0){   
+      alert('Not enough items in cart.')
+      
+    }else{
+      cartQuantity-=2;
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }
+  ">-2</button>
+
+  <button class="remove"
+   onclick="
+        cartQuantity-=3;
+    if (cartQuantity>=0){   
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }else{
+      alert('Not enough items in cart.')
+      cartQuantity+=3;
+    }
+        ">-3</button>
+
+
+<br>
+  <button class="show-quantity" onclick="
+    console.log(`Cart Quantity: ${cartQuantity}`)">Show Quantity</button>
+
+
+  <button class="reset"
+  onclick="
+    cartQuantity=0;
+    console.log(`Cart was reset
+Cart Quantity: ${cartQuantity}`
+    )
+  ">Reset Cart</button>
+
+  <script>
+    let cartQuantity = 0;
+    const max =10;
+
+
+  </script>
+</body>
+
+</html>
