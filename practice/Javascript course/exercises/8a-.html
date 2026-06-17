@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 8 Exercises</title>
+</head>
+<body>
+  <script>
+    const product1 ={
+      name:'basketball',
+      price:2095,
+      ['delivery-time']:'3 days',
+
+    }
+
+    const product2 = {
+        name: 't-shirt',
+        price: 3000,
+        ['delivery-time']: '3 days',
+
+      }
+
+    console.log(product1);
+
+    product1.price += 500;
+    console.log(product1);
+    
+    //d. 
+    function comparePrice(product1, product2){
+      product1.price < product2.price ? console.log(`The ${product1.name} is less expensive.`) : console.log(`The ${product2.name} is less expensive.`);
+    }
+
+    comparePrice(product1, product2);
+
+    //e. 
+    function isSameProduct(product1, product2){
+      if (product1.name===product2.name && product1.price===product2.price){
+        return console.log(true)
+      }else{
+        return console.log(false);
+      }
+    }
+
+    isSameProduct(product1, product2);
+
+
+    //f. converting a string to lower-case
+    const message ='Good Morning ';
+    console.log(message.toLowerCase());
+    //g. repeating a string
+    console.log(message.repeat(3));
+    console.log(message.repeat(6));
+
+    
+  </script>
+</body>
+</html>
